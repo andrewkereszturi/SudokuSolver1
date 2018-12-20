@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 class Board {
-    private List<List<Integer>> board;
+    private final List<List<Integer>> board;
 
     Board(String filePath) throws IOException {
         Path path = Paths.get(filePath);
