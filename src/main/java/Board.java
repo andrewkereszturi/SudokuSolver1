@@ -1,5 +1,3 @@
-package main;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -20,6 +18,10 @@ class Board {
                 return Character.getNumericValue(value);
             }
         }).collect(Collectors.toList())).collect(Collectors.toList());
+    }
+
+    List<List<Integer>> getBoard() {
+        return board;
     }
 
     public String toString() {
